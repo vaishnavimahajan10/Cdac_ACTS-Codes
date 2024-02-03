@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Operations</title>
+
+    <script src="./index.js"></script>
+</head>
+
+<body>
+
+    <form id="stringForm">
+
+        <label for="string1">String 1:</label>
+        <input type="text" id="string1" name="string1" required><br>
+
+        <label for="string2">String 2:</label>
+        <input type="text" id="string2" name="string2" required><br>
+
+        <label for="string3">Replace string</label>
+        <input type="text" id="string3" name="string3" required><br>
+
+
+        <input type="radio" id="toUpperCase" name="operation" value="toUpperCase" required>
+        <label for="toUpperCase">To Uppercase</label><br>
+
+        <input type="radio" id="toLowerCase" name="operation" value="toLowerCase" required>
+        <label for="toLowerCase">To Lowercase</label><br>
+
+        <input type="radio" id="trimSpaces" name="operation" value="trimSpaces" required>
+        <label for="trimSpaces">Trim Spaces</label><br>
+
+        <input type="radio" id="concatenate" name="operation" value="concatenate" required>
+        <label for="concatenate">Concatenate</label><br>
+
+        <input type="radio" id="search" name="operation" value="search" required>
+        <label for="search">Search</label><br><br>
+
+        <input type="radio" id="replace" name="operation" value="replace" required>
+        <label for="replace">Replace</label><br><br>
+
+
+        <button type="button" onclick="performOperation()">Submit</button>
+    </form>
+    <br>
+    <div id="result">
+
+
+    </div>
+
+</body>
+
+</html>
